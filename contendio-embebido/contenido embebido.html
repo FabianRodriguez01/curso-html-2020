@@ -10,6 +10,10 @@
             max-width: 100%;
             width: 30%;
         }
+        video {
+            max-width: 100%;
+            ;
+        }
     </style>
 </head>
 <body>
@@ -20,8 +24,14 @@
     <picture>
         <!--<source srcset="/contendio-embebido/assets/images/Bart-Simpson.webp,
         /contendio-embebido/assets/images/Bart-Simpson-movil.png 3x">-->
-        <source srcset="/contendio-embebido/assets/images/Bart-Simpson.webp" media="(max-width:1200px)">
+        <source srcset="/contendio-embebido/assets/images/Bart-Simpson.webp, 
+        /contendio-embebido/assets/images/Bart-Simpson-movil.png
+        "media="(max-width:1200px)">
         <img src="/contendio-embebido/assets/images/Bart-Simpson-movil.png" alt="">
     </picture>
+    <audio src="/contendio-embebido/assets/audio/Ryan Castro Ft. Feid - Monastery.mp3" controls autoplay muted></audio>
+
+    <video src="/contendio-embebido/assets/video/¡BRUTAL! Nuevo Trailer de Doctor Strange 2 Superior Ironman y revelado verdadero villano.mp4" controls muted loop
+    poster="/contendio-embebido/assets/images/Bart-Simpson.webp"></video>
 </body>
 </html>
