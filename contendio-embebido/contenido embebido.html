@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contenido Embebido</h1>
+    <!--
+    <img srcset="/contendio-embebido/assets/images/Bart-Simpson.webp,
+    /contendio-embebido/assets/images/Bart-Simpson-movil.png 3x" alt="Imagen de bart">-->
+    <picture>
+        <!--<source srcset="/contendio-embebido/assets/images/Bart-Simpson.webp,
+        /contendio-embebido/assets/images/Bart-Simpson-movil.png 3x">-->
+        <source srcset="/contendio-embebido/assets/images/Bart-Simpson.webp" media="(max-width:1200px)">
+        <img src="/contendio-embebido/assets/images/Bart-Simpson-movil.png" alt="">
+    </picture>
+</body>
+</html>
